@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@200;300;400;500;600;700&family=Outfit:wght@200;300;500;600;700;800&family=Overpass:wght@200;300;400;500;700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700&display=swap");
+
+.PortfoilioBody {
+  font-family: "Overpass";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(0, 0, 241, 0.4);
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+.portfolio {
+  font-family: "Overpass";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(0, 0, 241, 0.4);
+  box-sizing: border-box;
+  padding: 20px;
+  filter: blur(5px);
+}
+
+.Input {
+  width: 50%;
+  font-size: 1rem;
+  box-sizing: border-box;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 5px;
+}
+
+.infinitScroll {
+  width: 60vw;
+  margin-bottom: 10px;
+}
+
+.Divider {
+  width: 100%;
+  height: 1.5px;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.total {
+  display: flex;
+  font-family: "Outfit";
+}
+
+.Unit {
+  margin: 0px 10px;
+  font-weight: 500;
+}
+
+.content {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: 1;
+  top: 0px;
+  left: 0px;
+}
+
+.Item-Popup {
+  width: 50vw;
+  height: auto;
+  box-sizing: border-box;
+  padding: 2% 3%;
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 10px;
+  display: flex;
+  position: fixed;
+  flex-direction: column;
+  font-family: "Outfit";
+  font-size: 1.2rem;
+}
+
+.headingName {
+  font-weight: 600;
+  margin: 5px;
+}
+
+.category {
+  margin: 5px 5px 10px 5px;
+  font-weight: 400;
+}
+
+.tableDivider {
+  margin: 5px;
+  border: none;
+}
+
+.heading {
+  font-weight: 600;
+}
+
+.counter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.buysell-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Buy-button {
+  width: 30%;
+  box-sizing: border-box;
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding: 10px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgba(0, 255, 0, 1);
+}
+
+.Sell-button {
+  width: 30%;
+  box-sizing: border-box;
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding: 10px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgba(255, 0, 0, 1);
+}
+
+.crossIcon {
+  width: 40px;
+  height: 40px;
+  align-self: flex-end;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 20px;
+  background-color: lightgray;
+}
+
+@media only screen and (max-width: 600px) {
+  .infinitScroll {
+    width: 90vw;
+    font-size: 0.6rem;
+  }
+
+  .Item-Popup {
+    width: 95vw;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 800px) {
+  .infinitScroll {
+    width: 60vw;
+  }
+
+  .Item-Popup {
+    width: 70vw;
+    font-size: 1rem;
+  }
+}
